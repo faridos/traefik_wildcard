@@ -30,7 +30,8 @@ services:
       - "traefik.http.routers.traefik-secure.rule=Host(`traefik.le-5ra.de`)"
       - "traefik.http.routers.traefik-secure.middlewares=secureHeaders@file"
       - "traefik.http.routers.traefik-secure.service=api@internal"
-      - "traefik.http.routers.fastapi.tls.certresolver=le-dns"
+      - "traefik.http.routers.traefik-secure.tls.certresolver=le-dns"
+      - "traefik.http.routers.traefik-secure.tls=true"
       
 networks:
   traefik-proxy:
