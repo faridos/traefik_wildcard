@@ -22,7 +22,7 @@ services:
       # Add folder with dynamic configuration yml
       - ./configurations:/configurations
     networks:
-      - proxy
+      - traefik-proxy
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=proxy"
@@ -33,5 +33,5 @@ services:
       - "traefik.http.routers.fastapi.tls.certresolver=zerossl"
       
 networks:
-  proxy:
+  traefik-proxy:
     external: true
