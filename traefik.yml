@@ -51,7 +51,7 @@ certificatesResolvers:
       email: fm.maghraoui@gmail.com
       storage: acme.json
       dnsChallenge:
-        provider: acme-dns
+        provider: zerossl.acme
         resolvers:
           - "1.1.1.1:53"
           - "1.0.0.1:53"
