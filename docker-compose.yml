@@ -25,7 +25,7 @@ services:
       - traefik-proxy
     labels:
       - "traefik.enable=true"
-      - "traefik.docker.network=proxy"
+      - "traefik.docker.network=traefik-proxy"
       - "traefik.http.routers.traefik-secure.entrypoints=websecure"
       - "traefik.http.routers.traefik-secure.rule=Host(`traefik.le-5ra.de`)"
       - "traefik.http.routers.traefik-secure.middlewares=secureHeaders@file"
