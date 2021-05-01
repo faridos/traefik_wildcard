@@ -1,8 +1,4 @@
 {
-  "letsencrypt": {
-    "Account": null,
-    "Certificates": null
-  },
   "zerossl": {
     "Account": {
       "Email": "fm.maghraoui@gmail.com",

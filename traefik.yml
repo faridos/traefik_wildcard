@@ -29,13 +29,13 @@ providers:
     filename: /configurations/dynamic.yml
 
 certificatesResolvers:
-  letsencrypt:
-    acme:
-      email: fm.maghraoui@gmail.com
-      storage: acme.json
-      keyType: EC384
-      httpChallenge:
-        entryPoint: web
+#  letsencrypt:
+#    acme:
+#      email: fm.maghraoui@gmail.com
+#      storage: acme.json
+#      keyType: EC384
+#      httpChallenge:
+#        entryPoint: web
         
 #  le-dns:
 #    acme:
