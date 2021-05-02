@@ -13,14 +13,14 @@ entryPoints:
     http:
       middlewares:
         - secureHeaders@file
-      tls:
-        certResolver: letsencrypt
+#      tls:
+#        certResolver: letsencrypt
 #        certResolver: le-dns
         #certResolver: zerossl
-        domains:
-          - main: le-5ra.de
-            sans:
-              - "*.le-5ra.de"
+#        domains:
+#          - main: le-5ra.de
+#            sans:
+#              - "*.le-5ra.de"
               
 providers:
   docker:
@@ -38,13 +38,13 @@ certificatesResolvers:
       httpChallenge:
         entryPoint: web
         
-#  le-dns:
-#    acme:
-#      email: fm.maghraoui@gmail.com
-#      storage: acme.json
-#      keyType: EC384
-#      dnsChallenge:
-#        provider: acme-dns
+  le-dns:
+    acme:
+      email: fm.maghraoui@gmail.com
+      storage: acme.json
+      keyType: EC384
+      dnsChallenge:
+        provider: acme-dns
 
         #  zerossl:
         #acme:
