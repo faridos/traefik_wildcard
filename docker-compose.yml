@@ -33,6 +33,7 @@ services:
       - "traefik.http.routers.traefik-secure.tls.certresolver=letsencrypt" # limit rate
         #      - "traefik.http.routers.traefik-secure.tls.certresolver=zerossl" # unlimited rate
       - "traefik.http.routers.traefik-secure.tls=true"
+      - "traefik.http.routers.traefik-secure.priority=1000"
       
 networks:
   traefik-proxy:
